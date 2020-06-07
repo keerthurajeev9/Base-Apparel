@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body style="background-image: url(images/bg.svg)";>
+  <section id="#main" >
+    <div class="row">
+      <div class="col">
+      
+          <div class=" desktop col-lg-4">
+          
+          <img src="images/hero-desktop.jpg" alt="">
+         
+           
+       </div>
+     
+    
+       <img class="img" src="images/logo.svg" alt=""> 
+       <div class=" desktop1 col-lg-4">
+          
+        <img src="images/hero-mobile.jpg" class="img2" >
+       
+         
+     </div>
+        <p class="one">WE'RE </p>
+          <h1 class="two"> <b>COMING<br> SOON</h1>
+          
+          
+        <p class="three">Hello fellow shoppers! We're currently building our new <br>fashion store. 
+        Add your email below to stay up-to-date with<br> announcements and our launch deals.</p>
+       
+         
+         
+              <div class="four col">
+           
+            <input type="email" id='email' class="email" placeholder="Email Address" name="email">
+            <img src="" id="image" >
+            
+             <button class="btn" id="subscribe-button" onclick="Javascript:checkEmail();">
+              <img src="images/icon-arrow.svg" alt="">
+            </button> 
+            <br> 
+            <span id="error" style="margin-left:20rem; "></span>
+         
+          </div>
+        </div>
+     
+       
+
+</div>
+</section>
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Keerthana Rajeev</a>.
+    </p>
+  </footer>
+  <script language = "javascript" >  
+    function checkEmail() {  
+        var emailo = document.getElementById('email');  
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
+        if (!filter.test(emailo.value)) {  
+         error.style.color="pink";
+         
+         error.textContent="Please provide a valid email";
+         email.style.borderColor = "hsl(0, 93%, 68%)";
+         document.getElementById('subscribe-button').style.marginLeft = "30px";
+         document.getElementById("image").src = "images/icon-error.svg"
+        }  
+        else{
+          error.textContent="";
+          email.style.borderColor="grey";
+         document.getElementById('subscribe-button').style.marginLeft = "55px";
+          document.getElementById("image").src="";
+        }
+    }   
+
+</script>
+</body>
+</html>

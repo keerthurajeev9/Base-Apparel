@@ -1,0 +1,109 @@
+.img{
+    margin-top: 6rem;
+    margin-left:18rem;
+}
+
+   
+    
+   
+    
+
+.one{
+    color:  hsl(0, 36%, 70%);
+    letter-spacing: 10px;
+    font-size:40px;
+    margin-top: 12rem;
+    margin-left:18rem;
+    line-height: 45px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 14px;
+    font-size:70px;
+    
+}
+.two{
+   color: hsl(0, 6%, 24%);
+   margin-top: 0.2rem;
+   margin-left:18rem;
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight :bolder;
+   line-height: 80px;
+   letter-spacing: 14px;
+   font-size:70px;
+}
+.three{
+    color:  hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:16px;
+    margin-top: 2rem;
+    margin-left:18rem;
+    line-height:30px;
+    height:100px;
+    width:1000px;
+}
+
+#email{
+    margin-top: 2rem;   
+    margin-left:16rem;
+    width:35rem;
+    height:4rem;
+    border-radius:3rem;
+    border: 1px solid grey;
+}
+::placeholder{
+    font-size: 18px;
+    color:  hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left:2rem;
+   
+}
+.btn{
+    background-image: linear-gradient( hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    margin-top: 0.1rem;   
+    margin-left:55px;
+    border-radius: 2.5rem;
+    width:6.6rem;
+    height:4.2rem;
+    margin-bottom:0.1rem;   
+    
+   
+}
+#image{
+  margin-left:-130px;
+  display:inline-block;
+}
+.desktop{
+   float: right;
+   
+}
+
+@media screen and (max-width: 1375px) {
+    .desktop {
+        display: none !important; 
+    }
+    
+}
+.desktop1{
+    display:none;
+}
+@media screen and (max-width: 500px) {
+    .desktop1 {
+        display: block;
+        
+  
+    margin-top:40px;
+    
+    
+
+    }
+    .img2{
+        width:1000px;
+    }
+    
+}
+
+.btn:hover{
+    opacity:0.6;
+}
+.four{
+    width:1000px;
+}
